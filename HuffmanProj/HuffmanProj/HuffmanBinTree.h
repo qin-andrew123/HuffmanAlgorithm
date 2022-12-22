@@ -11,5 +11,8 @@ private:
 public:
 	~HuffmanBinTree() = default;
 	HuffmanNode* constructTree(unordered_map<char,int> freqTable);
-	void printTree(HuffmanNode* root);
+
+	enum binTreeVals {
+		STACK_MIN_VAL = 1,
+	};
 };

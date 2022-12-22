@@ -7,7 +7,7 @@ bool HuffmanNode::operator()(HuffmanNode* nodeOne, HuffmanNode* nodeTwo)
 
 int HuffmanNode::getFreq()
 {
-	return freq;
+	return this->freq;
 }
 
 void HuffmanNode::setValues(char character, int frequency, HuffmanNode* lChild, HuffmanNode* rChild)
@@ -20,28 +20,23 @@ void HuffmanNode::setValues(char character, int frequency, HuffmanNode* lChild, 
 
 HuffmanNode* HuffmanNode::getLChild()
 {
-	return leftChild;
+	return this->leftChild;
 }
 
 HuffmanNode* HuffmanNode::getRChild()
 {
-	return rightChild;
+	return this->rightChild;
 }
 
 char HuffmanNode::getCharacter()
 {
-	return _character;
+	return this->_character;
 }
 
 
 ostream& operator<<(ostream& os, const HuffmanNode& node)
 {
-	cout << "Node: " << node._character  << "| Freq: " << node.freq << endl;
-	if (node.leftChild != nullptr) {
-		cout << "  Left Child: " << *node.leftChild << endl;
-	}
-	if (node.rightChild != nullptr) {
-		cout << "  Right Child: " << *node.rightChild << endl;
-	}
+	cout << (int) node._character << endl;
+	
 	return os;
 }

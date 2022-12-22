@@ -129,12 +129,14 @@
   <ItemGroup>
     <ClCompile Include="HuffmanBinTree.cpp" />
     <ClCompile Include="HuffmanCompression.cpp" />
+    <ClCompile Include="HuffmanDecompression.cpp" />
     <ClCompile Include="HuffmanNode.cpp" />
     <ClCompile Include="HuffmanProj.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="HuffmanBinTree.h" />
     <ClInclude Include="HuffmanCompression.h" />
+    <ClInclude Include="HuffmanDecompression.h" />
     <ClInclude Include="HuffmanNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
